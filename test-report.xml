@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\src\point\point.service.spec.ts">
+    <testCase name="PointService should be defined" duration="16">
+      <failure message="Error: Nest can&apos;t resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context."><![CDATA[Error: Nest can't resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context.
+
+Potential solutions:
+- Is RootTestModule a valid NestJS module?
+- If UserPointTable is a provider, is it part of the current RootTestModule?
+- If UserPointTable is exported from a separate @Module, is that module imported within RootTestModule?
+  @Module({
+    imports: [ /* the Module containing UserPointTable */ ]
+  })
+
+    at TestingInjector.lookupComponentInParentModules (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-injector.js:19:45)
+    at resolveParam (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 0)
+    at TestingInjector.resolveConstructorParams (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at TestingInjector.loadInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at TestingInjector.loadProvider (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at TestingInstanceLoader.createInstancesOfProviders (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:40:13
+    at async Promise.all (index 1)
+    at TestingInstanceLoader.createInstances (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:39:9)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:22:13)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-instance-loader.js:9:9)
+    at TestingModuleBuilder.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:118:9)
+    at TestingModuleBuilder.compile (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:74:9)
+    at Object.<anonymous> (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\src\point\point.service.spec.ts:19:35)]]></failure>
+    </testCase>
+    <testCase name="PointService givenUserId_whenSelectById_thenReturnUserPoint userId not int should throw error" duration="2">
+      <failure message="Error: Nest can&apos;t resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context."><![CDATA[Error: Nest can't resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context.
+
+Potential solutions:
+- Is RootTestModule a valid NestJS module?
+- If UserPointTable is a provider, is it part of the current RootTestModule?
+- If UserPointTable is exported from a separate @Module, is that module imported within RootTestModule?
+  @Module({
+    imports: [ /* the Module containing UserPointTable */ ]
+  })
+
+    at TestingInjector.lookupComponentInParentModules (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-injector.js:19:45)
+    at resolveParam (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 0)
+    at TestingInjector.resolveConstructorParams (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at TestingInjector.loadInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at TestingInjector.loadProvider (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at TestingInstanceLoader.createInstancesOfProviders (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:40:13
+    at async Promise.all (index 1)
+    at TestingInstanceLoader.createInstances (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:39:9)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:22:13)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-instance-loader.js:9:9)
+    at TestingModuleBuilder.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:118:9)
+    at TestingModuleBuilder.compile (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:74:9)
+    at Object.<anonymous> (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\src\point\point.service.spec.ts:19:35)]]></failure>
+    </testCase>
+    <testCase name="PointService givenUserId_whenSelectById_thenReturnUserPoint Exact UserPoint about specific UserId" duration="1">
+      <failure message="Error: Nest can&apos;t resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context."><![CDATA[Error: Nest can't resolve dependencies of the PointService (?). Please make sure that the argument UserPointTable at index [0] is available in the RootTestModule context.
+
+Potential solutions:
+- Is RootTestModule a valid NestJS module?
+- If UserPointTable is a provider, is it part of the current RootTestModule?
+- If UserPointTable is exported from a separate @Module, is that module imported within RootTestModule?
+  @Module({
+    imports: [ /* the Module containing UserPointTable */ ]
+  })
+
+    at TestingInjector.lookupComponentInParentModules (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at TestingInjector.resolveComponentInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-injector.js:19:45)
+    at resolveParam (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 0)
+    at TestingInjector.resolveConstructorParams (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at TestingInjector.loadInstance (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at TestingInjector.loadProvider (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at TestingInstanceLoader.createInstancesOfProviders (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+    at C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:40:13
+    at async Promise.all (index 1)
+    at TestingInstanceLoader.createInstances (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:39:9)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\core\injector\instance-loader.js:22:13)
+    at TestingInstanceLoader.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-instance-loader.js:9:9)
+    at TestingModuleBuilder.createInstancesOfDependencies (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:118:9)
+    at TestingModuleBuilder.compile (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\node_modules\@nestjs\testing\testing-module.builder.js:74:9)
+    at Object.<anonymous> (C:\Users\Mkkas3145\Desktop\project\hhplus-tdd-nest\src\point\point.service.spec.ts:19:35)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>
