@@ -6,9 +6,6 @@ import { UserPointTable } from 'src/database/userpoint.table';
 export class PointService {
   constructor(private readonly userDb: UserPointTable) {}
   async selectById(id: number) {
-    if (!Number.isInteger(id)) {
-      throw new BadRequestException();
-    }
     return await this.userDb.selectById(id);
   }
 

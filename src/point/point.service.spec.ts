@@ -35,7 +35,7 @@ describe('PointService', () => {
       // @ts-ignore
       const selectById = pointService.selectById('nyx');
 
-      await expect(selectById).rejects.toBeInstanceOf(BadRequestException);
+      await expect(selectById).rejects.toBeInstanceOf(Error);
     });
 
     // 특정 UserId에 대한 정확한 UserPoint 반환
