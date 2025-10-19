@@ -10,6 +10,9 @@ export class PointService {
   }
 
   async insertOrUpdate(id: number, amount: number) {
+    if (!Number.isInteger(amount)) {
+      throw new Error('Amount is not valid int');
+    }
     return await this.userDb.insertOrUpdate(id, amount);
   }
 }
