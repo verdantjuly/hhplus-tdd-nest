@@ -48,4 +48,32 @@ describe('PointService', () => {
       });
     });
   });
+
+  describe('givenUserId_whenInsertOrUpdate_thenReturnUserPoint', () => {
+    // userId가 int가 아니면 에러 발생
+    it('userId not int should throw error', async () => {
+      // @ts-ignore
+      const insertOrUpdate = pointService.insertOrUpdate('nyx', 77);
+
+      await expect(insertOrUpdate).rejects.toBeInstanceOf(Error);
+    });
+
+    // amount가 int가 아니면 에러 발생
+    it('amount not int should throw error', async () => {
+      // @ts-ignore
+      const insertOrUpdate = pointService.insertOrUpdate(77, 'nyx');
+
+      await expect(insertOrUpdate).rejects.toBeInstanceOf(Error);
+    });
+
+    // 특정 UserId, Amount에 대한 정확한 UserPoint 반환
+    it('Exact UserPoint about specific UserId', async () => {
+      const insertOrUpdate = pointService.insertOrUpdate(123, 777);
+      await expect(insertOrUpdate).resolves.toStrictEqual({
+        id: 123,
+        point: 777,
+        updateMillis: expect.anything(),
+      });
+    });
+  });
 });
